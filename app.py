@@ -15,4 +15,5 @@ class NoiseValue(Resource):
         return response,201
 
 api.add_resource(NoiseValue,'/predict')
-app.run(port=3000,debug=True)
+if __name__ == '__main__':
+    app.run(port=3000,debug=True)
