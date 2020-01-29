@@ -1,6 +1,6 @@
 Flask
 Flask-RESTful
-pickle
+pickle-mixin
 pandas
 sklearn
 uwsgi
