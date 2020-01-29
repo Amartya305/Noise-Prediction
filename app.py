@@ -6,7 +6,7 @@ app = Flask(__name__)
 api = Api(app)
 class NoiseValue(Resource):
     def __init__(self):
-        self.model = pickle.load(open('..\models\multiple_regressor.pkl','rb'))
+        self.model = pickle.load(open('\models\multiple_regressor.pkl','rb'))
     def post(self):
         coords = request.get_json()
         coords.update((x,[y]) for x,y in coords.items())
